@@ -13,7 +13,8 @@
 		<link href="fonts/alegreya.css" rel="stylesheet" type="text/css">
 		<link href="fonts/opensans.css" rel="stylesheet" type="text/css">
 		<link href="css/reset.css" rel="stylesheet" type="text/css">
-	 	<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<link href="css/style_eng.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<header class="header">
@@ -23,6 +24,13 @@
 					<nav class="header_menu">
 					<div class="mobile_email">
 						<p><a href="mailto:info@egovacademy.in.ua">info@egovacademy.in.ua</a></p>
+					</div>
+					<div class="mobile_language">
+						<div class="language">
+							<p><a class="ua_language" href="index.html">UA</a></p>
+							<hr noshade="">
+							<p>EN</p>
+						</div>
 					</div>
 					<ul class="nav">
 						<li><a href="#about_us">About Us</a></li>                           
@@ -59,7 +67,7 @@
 				<div class="top_wrapper">
 					<h1>Digitize, create, scale</h1>
 					<p>EGOV Academy is the first educational platform in Ukraine, the purpose of which is to teach how to digitalize and implement egov services in cities and regions, and to popularize the ideas of e-government among citizens.</p>
-					<a href="#courses" class="btn btn-warning">Подивитися всі вебінари</a>
+					<a href="#courses" class="btn btn-warning">See all webinars</a>
 				</div>
 				<div class="delta">
 					<div class="delta_first"></div>
@@ -71,7 +79,7 @@
 			<div class="container">
 				<div class="wrapper_container">
 					<div class="nearest_webinar">
-						<h3 >Найближчий вебінар</h3>
+						<h3>The next webinar</h3>
 						<div class="webinar_block">
 							<img src="img/image 35.jpg" alt="">
 							<div class="content_block">
@@ -87,13 +95,13 @@
 						</div>
 					</div>
 					<div class="subject_webinars">
-						<h2>Тематика вебінарів</h2>
+						<h2>Our topics of webinar</h2>
 						<div class="categories_nav">
-							<button class="categories_nav-link all_categories" data-filter="all">Всі</button>
-							<button class="categories_nav-link" data-filter="security">Кібербезпека</button>
-							<button class="categories_nav-link" data-filter="digitization">Навчання цифровізації</button>
-							<button class="categories_nav-link" data-filter="implementation">Імплементація в містах та регіонах</button>
-							<button class="categories_nav-link" data-filter="experience">Закордонний досвід</button>
+							<button class="categories_nav-link all_categories" data-filter="all">All</button>
+							<button class="categories_nav-link" data-filter="security">Cybersecurity</button>
+							<button class="categories_nav-link" data-filter="digitization">Teaching digitization</button>
+							<button class="categories_nav-link" data-filter="implementation">Implementation in cities and regions</button>
+							<button class="categories_nav-link" data-filter="experience">Foreign experience</button>
 						</div>
 						<div class="webinar_block" data-cat="security">
 							<img src="img/image 35.jpg" alt="">
@@ -268,7 +276,7 @@
 					<div class="project_list">
 						<div class="slide">
 							<img src="img/image 35.jpg" alt="" class="s1-pro" />
-							<p class="soon">Скоро</p>
+							<p class="soon">Soon</p>
 							<div class="slide_info">
 								<h3>Як намалювати дизайн щоб він відразу зайшов заказчику?</h3>
 								<p><span class="icon-Untitled"></span>18 листопада в 16:00</p>
@@ -385,50 +393,57 @@
 				<h2>EGOV Academy knowledge base</h2>
 				<div class="substruction_wrapper">
 					<div class="scroll">
-						<div class="scroll_block">
+						<div class="scroll_block" data-video="1">
 							<div class="scroll_info">
 								<h4>Розбираємося у кібербезпеці</h4>
 								<p>Спікер: Дуртмек Кристалфист</p>
 							</div> 
 						</div>
-						<div class="scroll_block">
+						<div class="scroll_block" data-video="2">
 							<div class="scroll_info">
 								<h4>Розбираємося у кібербезпеці</h4>
 								<p>Спікер: Дуртмек Кристалфист</p>
 							</div> 
 						</div>
-						<div class="scroll_block">
+						<div class="scroll_block" data-video="3">
 							<div class="scroll_info">
 								<h4>Розбираємося у кібербезпеці</h4>
 								<p>Спікер: Дуртмек Кристалфист</p>
 							</div> 
 						</div>
-						<div class="scroll_block">
+						<div class="scroll_block" data-video="4">
 							<div class="scroll_info">
 								<h4>Розбираємося у кібербезпеці</h4>
 								<p>Спікер: Дуртмек Кристалфист</p>
 							</div> 
 						</div>
-						<div class="scroll_block">
+						<div class="scroll_block" data-video="5">
 							<div class="scroll_info">
 								<h4>Розбираємося у кібербезпеці</h4>
 								<p>Спікер: Дуртмек Кристалфист</p>
 							</div> 
 						</div>
-						<div class="scroll_block">
+						<div class="scroll_block" data-video="6">
 							<div class="scroll_info">
 								<h4>Розбираємося у кібербезпеці</h4>
 								<p>Спікер: Дуртмек Кристалфист</p>
 							</div> 
 						</div>
 					</div>
-					<iframe src="https://www.youtube.com/embed/Wb_NppDX4zk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="testimonial-video">
+						<iframe video="1" src="https://www.youtube.com/embed/Wb_NppDX4zk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe video="2" style="display: none;" src="https://www.youtube.com/embed/2HXhQ6KuIYM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe video="3" style="display: none;" src="https://www.youtube.com/embed/Wb_NppDX4zk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe video="4" style="display: none;" src="https://www.youtube.com/embed/Wb_NppDX4zk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe video="5" style="display: none;" src="https://www.youtube.com/embed/Wb_NppDX4zk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe video="6" style="display: none;" src="https://www.youtube.com/embed/Wb_NppDX4zk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="library">
 			<div class="container">
-				<h2>Бібліотека інформації з Egov та відкритих даних</h2>
+				<h2>Knowledge base</h2>
 				<div class="library_block">
 					<img src="img/artificial_intelligence 1.png" alt="">
 					<div class="library_info">	
@@ -450,7 +465,7 @@
 		</section>
 		<section class="partners">
 			<div class="container">
-				<h2>Партнери та медіа що пишуть про нас</h2>
+				<h2>Partners and media</h2>
 				<div class="partners_blocks">
 					<div class="partners_row">
 						<div><img src="img/hiil.png" alt=""></div>
@@ -473,13 +488,13 @@
 		</section>
 		<section class="contact" id="contacts">
 			<div class="container">
-				<h2>Будемо на зв’язку</h2>
+				<h2>Let’s stay in touch!</h2>
 				<div class="contact_blocks">
 					<div class="contact_info">
-						<img src="img/image 24.jpg" alt="">
+						<img src="img/image 24.png" alt="">
 						<div class="contact_text">
-							<h3>Игорь Николаев</h3>
-							<p>Засновник</p>
+							<h3>Igor Nikolaiev</h3>
+							<p>Founder</p>
 							<div class="contact_link">
 								<a href="mailto:info@egovacademy.in.ua">info@egovacademy.in.ua</a>
 								<div>
@@ -491,10 +506,10 @@
 						</div>
 					</div>
 					<div class="contact_info">
-						<img src="img/image 25.jpg" alt="">
+						<img src="img/image 25.png" alt="">
 						<div class="contact_text">  
-							<h3>Наталія Комарницька</h3>
-							<p>PR та маркетинг</p>
+							<h3>Natalia Komarnytska</h3>
+							<p>PR and marketing </p>
 							<div class="contact_link">
 								<a href="mailto:info@egovacademy.in.ua">info@egovacademy.in.ua</a>
 								<div>
@@ -510,14 +525,14 @@
 		</section>
 		<section class="become_speaker">
 			<div class="container">
-				<h2 class="mobile_title">Заповни щоб стати спікером</h2>
+				<h2 class="mobile_title">Fill in to become a speaker</h2>
 			</div>
 			<div class="container">
 				<div class="become_speaker_block">
 					<div class="become_speaker_info">	
-						<h2>Заповни щоб стати спікером</h2>
-						<p>Якщо у тебе є релевантний досвід та ти хочеш розповісти про це слухачам заповни актету за посиланням та зареструйся провести вебінар</p>
-						<a href="#" class="btn btn-warning">Стати спікером</a>
+						<h2>Fill in to become a speaker</h2>
+						<p>If you have a relevant experience, fill in the form by following the link.</p>
+						<a href="#" class="btn btn-warning">Become a speaker</a>
 					</div>
 					<img src="img/speeker.png" alt="">
 				</div>

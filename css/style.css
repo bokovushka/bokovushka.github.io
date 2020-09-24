@@ -122,6 +122,9 @@ img {
 .mobile_email {
   display: none;
 }
+.mobile_language{
+  display: none;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -251,6 +254,7 @@ img {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
+  min-width: 165px;
 }
 /* section_top end */
 
@@ -345,7 +349,7 @@ img {
   padding: 20px;
   /* background: linear-gradient(90deg, #7D41F7 0%, #AD20FE 100%); */
   background-color: #AD20FE;
-  transition: 2s background-color linear;
+  transition: 0.8s background-color linear;
   ;
 }
 .webinar_block_active .webinar_date {
@@ -506,7 +510,6 @@ img {
 .description_block {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 20px 0 0 0;
 }
 .description_info {
@@ -514,6 +517,7 @@ img {
 }
 .description_info h3 {
   margin-bottom: 20px;
+  margin-top: 40px;
 }
 .description img {
   max-height: 325px;
@@ -729,6 +733,7 @@ img {
 }
 .scroll_block {
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .scroll_block:last-child {
   margin-bottom: 0;
@@ -745,11 +750,17 @@ img {
   font-size: 14px;
   line-height: 22px;
 }
-iframe {
+
+.testimonial-video{
   display: block;
   max-width: 600px;
   width: 100%;
   height: 336px;
+  overflow: hidden;
+}
+iframe {
+ width: 100%;
+ height: 100%;
 }
 .scroll::-webkit-scrollbar-thumb {
   background-color: #000;
@@ -831,11 +842,13 @@ iframe {
 }
 .contact_info {
   display: flex;
-  background: #ffffff;
   box-shadow: 0px 10px 60px rgba(9, 15, 65, 0.05);
   border-radius: 4px;
   width: 100%;
   height: 100%;
+}
+.contact_info:first-child{
+  margin-right: 20px;
 }
 .contact_info img {
   max-width: 200px;
@@ -1151,13 +1164,14 @@ footer {
     margin-top: 40px;
   }
   .description img {
-    max-height: 230px;
-    width: auto;
+    max-height: 100%;
+    width: fit-content;
     margin-bottom: 30px;
   }
   .description_block {
     flex-direction: column-reverse;
     text-align: center;
+    align-items: center;
   }
   .description {
     padding: 40px 0 60px 0;
@@ -1412,7 +1426,7 @@ footer {
     background: url(../img/close.png) no-repeat center;
     background-size: contain;
     right: 40px;
-    top: 40px;
+    top: 45px;
     z-index: 3;
     width: 16px;
     height: 16px;
@@ -1436,8 +1450,14 @@ footer {
     border-left-width: 1px;
   }
   .header_menu_active .nav li {
-    display: block;
+    display: flex;
     margin-right: 12%;
+  }
+  .header_menu_active .nav li:nth-child(5){
+    order: 6;
+  }
+  .header_menu_active .nav li:nth-child(6){
+    order: 5;
   }
   .header_menu_active .nav a {
     font-weight: bold;
@@ -1447,11 +1467,17 @@ footer {
   .header_menu_active .language {
     display: none;
   }
+  .header_menu_active .email {
+    display: none;
+  }
   .header_menu_active .icon {
     position: relative !important;
     bottom: 0 !important;
     top: 0 !important;
     right: 0 !important;
+  }
+  .header_menu_active .icon a{
+    margin:0 20px 0 0;
   }
   .header_menu_active .nav {
     transform: translate3d(-50%, -50%, 0);
@@ -1468,7 +1494,7 @@ footer {
   .header_menu_active .mobile_email {
     display: block;
     position: absolute;
-    top: 35px;
+    top: 40px;
     left: 50px;
   }
   .header_menu_active .mobile_email p {
@@ -1609,6 +1635,8 @@ footer {
 }
 .description img{
   max-height: 187px;
+  max-width: 100%;
+  width: auto;
 }
 .slide_info h3 {
   font-size: 16px;
@@ -1710,6 +1738,22 @@ footer {
 .header_menu_active .nav a {
   font-size: 16px;
   line-height: 60px;
+}
+.header_menu_active .email {
+  display: flex;
+}
+.header_menu_active .mobile_language {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+.header_menu_active .mobile_language .language {
+  display: flex;
+}
+.header_menu_active .mobile_language .language p {
+  font-size: 16px;
+  line-height: 24px;
 }
 }
 @media only screen and (max-width: 480px) {
@@ -1818,10 +1862,7 @@ margin-bottom: 16px;
 .substruction h2 {
   margin-bottom: 16px;
 }
-iframe {
-  display: block;
-  max-width: 600px;
-  width: 100%;
+.testimonial-video {
   height: 185px;
 }
 .library {
